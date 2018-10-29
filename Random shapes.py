@@ -2,52 +2,60 @@ import turtle
 import random
 
 def tri(num, angle):
-    left(angle)
-    forward(num)
-    left(120)
-    forward(num)
-    left(120)
-    forward(num)
-    left(120)
-    right(angle)
+    turtle.left(angle)
+    turtle.forward(num)
+    turtle.left(120)
+    turtle.forward(num)
+    turtle.left(120)
+    turtle.forward(num)
+    turtle.left(120)
+    turtle.right(angle)
     
 def sqr(num, angle):
-    left(angle)
-    forward(num)
-    left(90)
-    forward(num)
-    left(90)
-    forwrd(num)
-    left(90)
-    forward(num)
-    left(90)
-    right(angle)
+    turtle.left(angle)
+    turtle.forward(num)
+    turtle.left(90)
+    turtle.forward(num)
+    turtle.left(90)
+    turtle.forward(num)
+    turtle.left(90)
+    turtle.forward(num)
+    turtle.left(90)
+    turtle.right(angle)
 
 def pent(num, angle):
-    left(angle)
+    turtle.left(angle)
     for i in range(5):
-        forward(num)
-        left(108)
-    right(angle)
+        turtle.forward(num)
+        turtle.left(108)
+    turtle.right(angle)
 
-def hex(num, angle):
-    left(angle)
+def hexa(num, angle):
+    turtle.left(angle)
     for i in range(6):
-        forward(num)
-        left(120)
-    right(angle)
-    
-shapes = [tri, sqr, pent, hex]
+        turtle.forward(num)
+        turtle.left(120)
+    turtle.right(angle)
 
 def changeShape():
     num = random.randint(0, 3)
+    
     if(num==0):
-        tri(random.randint(0, 50)
+        tri(random.randint(0, 50),random.randint(0,360))
+    
+    if(num==1):
+        sqr(random.randint(0, 50),random.randint(0,360))
+    
+    if(num==2):
+        pent(random.randint(0, 50),random.randint(0,360))
+    
+    if(num==3):
+        hexa(random.randint(0, 50),random.randint(0,360))
 
 def move():    
-    turtle.penup
+    turtle.penup()
     turtle.goto(random.randint(-450,450),random.randint(-400,400))
-    turtle.pendown
+    turtle.pendown()
 
 while(True):
     move()
