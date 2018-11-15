@@ -23,13 +23,15 @@ def drawBord():
     turtle.home()
     turtle.pendown()
 
-def bounce():
+def bounce(x,y):
+    
     if((x>=450 or x<=-450)or(y>=400 or y<=-400)):
         turning = False
-    if((x<400 and x>-400)and(y<350 and y>-350)):
+    if((x<450 and x>-450)and(y<400 and y>-400)):
         turning = True
+    return turning
 
-def turn():
+def turn(turning):
     if(turning==True):
         turtle.setheading(random.randint(0,359))
     if(turning==False):
@@ -39,11 +41,10 @@ def randMove():
     turtle.forward(random.randint(5,50))
 
 drawBord()
-turtle.goto(300,300)
 while True:
     x=turtle.xcor()
     y=turtle.ycor()
-    bounce()
-    turn()
+    turning=bounce(x,y)
+    turn(turning)
     randMove()
     turtle.update()
