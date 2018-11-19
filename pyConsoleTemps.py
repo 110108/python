@@ -16,8 +16,21 @@ run=True
 
 while run:
     In=input("Enter 1 to convert Fahrenheit to Celsius, 2 to convert Celsius to Fahrenheit, or Q to Quit: ")
-    if(In==81 or In==113):
+    if(In=="Q" or In=="q"):
+        run = False
         continue
-    if(In is 1):
+    if(In == "1"):
         ftemp=input("What Fahrenheit temperature would you like to convert? ")
-        print("That temperature in Celsius is "+((ftemp-32)*5/9))
+        ftemp=int(ftemp)
+        fperm=((ftemp-32)*5/9)
+        fperm=str(fperm)
+        print("That temperature in Celsius is "+(fperm))
+    if(In == "2"):
+        ctemp=input("What Celsius temperature would you like to convert? ")
+        ctemp=int(ctemp)
+        cperm=(ctemp * 9 / 5 + 32)
+        cperm=str(cperm)
+        print("That temperature in Fahrenheit is "+(cperm))
+    else:
+        print("PLEASE ENTER EITHER 1, 2, OR Q")
+print("exot")
