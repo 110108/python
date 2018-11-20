@@ -6,3 +6,4 @@
 # if player misses and ball leaves field the other two players score a half point
 # if ball was in range of both players and niether gets it the third player wins a full point
 # ball slowly speeds up
+# winner is first player to score 10 pts
