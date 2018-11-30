@@ -7,3 +7,4 @@
 # if ball was in range of both players and niether gets it the third player wins a full point
 # ball slowly speeds up
 # winner is first player to score x amount of points
+#in case of a tie, next tied player to score a point or half point wins
