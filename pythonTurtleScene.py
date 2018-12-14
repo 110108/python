@@ -27,5 +27,8 @@ def seaweedLeaf(x,width, height):
 def bubble(x,y,size):
     turtle.goto(x,y)
     turtle.pendown()
-    #TODO: finish this function
+    turtle.begin_fill()
+    turtle.color(random.randint(0,13),random.randint(200,255),random.randint(0,26)
+    turtle.circle(size)
+    turtle.penup()
 #TODO: write write function
