@@ -40,10 +40,19 @@ def fish(x, y, size):
     turtle.circle(size*2, 100, 15)
     turtle.seth(90)
     turtle.backward(size)
-    turtle.forward(size/2)
-    turtle.seth(180)
-    turtle.forward(1000)
     turtle.penup()
-fish(0,0,100)
-#TODO: write write function
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.right(49)
+    turtle.circle(-(size*2), 100, 15)
+    turtle.penup()
+    
+def name(x, y, name, font):
+    turtle.goto(x,y)
+    turtle.write(name, False, "center", (font, 8, "normal"))
+
+turtle.goto(0,0)
+turtle.forward(10000)
+#def water(col):
+#    turtle.goto(
 #TODO: write random code
