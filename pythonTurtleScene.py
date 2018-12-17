@@ -28,7 +28,22 @@ def bubble(x,y,size):
     turtle.goto(x,y)
     turtle.pendown()
     turtle.begin_fill()
-    turtle.color(random.randint(0,13),random.randint(200,255),random.randint(0,26)
-    turtle.circle(size)
+    turtle.color(random.randint(0,100),random.randint(97,160),255)
+    turtle.circle(size/2)
+    turtle.end_fill()
     turtle.penup()
+
+def fish(x, y, size):
+    turtle.goto(x,y)
+    turtle.pendown()
+    turtle.right(40)
+    turtle.circle(size*2, 100, 15)
+    turtle.seth(90)
+    turtle.backward(size)
+    turtle.forward(size/2)
+    turtle.seth(180)
+    turtle.forward(1000)
+    turtle.penup()
+fish(0,0,100)
 #TODO: write write function
+#TODO: write random code
