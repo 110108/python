@@ -51,8 +51,7 @@ def name(x, y, name, font):
     turtle.goto(x,y)
     turtle.write(name, False, "center", (font, 8, "normal"))
 
-turtle.goto(0,0)
-turtle.forward(10000)
+def 
 #def water(col):
 #    turtle.goto(
 #TODO: write random code
