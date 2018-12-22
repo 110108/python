@@ -7,4 +7,5 @@ def question(question, answer):
         sc = input("You Only Have "+chances+" Chances left\n"+question)
     print("Correct")
 
-print("")
+question("What is 132 in 10 bit binary? ", "0010000100")
+question("","")
